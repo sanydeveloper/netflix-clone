@@ -1,0 +1,584 @@
+<html>
+    <head>
+        <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+        <link rel="icon" href="http://pngimg.com/uploads/netflix/small/netflix_PNG15.png">
+    </head>
+    <style>
+
+        .netflix{
+            width: 100%;
+            height: 400%;
+            background-color: rgb(30, 29, 29);
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.471);
+            position: absolute;
+            top: 1%;
+        }
+        .logo{
+            top: 3%;
+            left: 5%;
+            position: absolute;
+        }
+        .drop-down{
+            top: 3%;
+            left: 80%;
+            position: absolute;
+        }
+        .sign{
+            top: 2.5%;
+            left: 90%;
+            position: absolute;
+        }
+        .write{
+            top: 25%;
+            left: 34%;
+            margin: auto;
+            position: absolute;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: x-large;
+        }
+        .write h1{
+            color: aliceblue;
+        }
+        .write p{
+            color: aliceblue;
+        }
+        .email{
+            top: 70%;
+            left: 34%;
+            position: absolute;
+            display: inline-flex;
+        }
+        .tv{
+            width: 100%;
+            height: 60%;
+            top: 103%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: x-large;
+        }
+        .tv h1{
+            top: 25%;
+            left: 10%;
+            position: absolute;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+                        color: aliceblue;
+        }
+        .tv p{
+            top: 45%;
+            left: 10%;
+            position: absolute;
+            color: aliceblue;
+        }
+
+        .movie{
+            position: absolute;
+            left: 65%;
+            top: 18%;
+        }
+        .video{
+            position: absolute;
+            top: 30%;
+            margin: auto;
+            width: 330px;
+            left: 53%;
+        }
+        .download{
+            width: 100%;
+            height: 60%;
+            background-color: rgb(0, 0, 0);
+            top: 165%;
+            position: absolute;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: x-large;
+        }
+        .download h1{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            color: aliceblue;
+        }
+        .download p{
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            color: aliceblue;
+        }
+        .loading{
+            position: absolute;
+            top: 7%;
+            left: 7%;
+        }
+        .load{
+            width: 20%;
+            height: 20%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            left: 190px;
+            top: 60%;
+            border-radius: 10px;
+        }
+        .picture{
+            position: absolute;
+            top: 10%;
+            left: 5%;
+
+        }
+        .downloading p{
+            position: absolute;
+            top: 27%;
+            left: 25%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+            font-weight: 500;
+            color: blue;
+        }
+        
+        .downloading p1{
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+            font-weight: 500;
+            color: aliceblue;
+        }
+        .roll{
+            position: absolute;
+            top: 30%;
+            left: 80%;
+        }
+        .stream{
+            width: 100%;
+            height: 60%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 227%;
+            font-size: x-large;
+        }
+        
+        .stream h1{
+            top: 25%;
+            left: 10%;
+            position: absolute;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+                        color: aliceblue;            
+        }
+        .stream p{
+            top: 45%;
+            left: 10%;
+            position: absolute;
+            color: aliceblue;
+        }
+        .films{
+            position: absolute;
+            left: 62%;
+            top: 18%;
+            
+        }
+        .film{
+          width: 50px;
+            position: absolute;
+            left: 65%;
+            top: 25%;
+        }
+        .child{
+            width: 100%;
+            height: 60%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 289%;
+            font-size: x-large;
+        }
+        .profile h1{
+            top: 10%;
+            left: 50%;
+            position: absolute;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: aliceblue;
+        }
+        .profile p{
+            top: 45%;
+            left: 50%;
+            position: absolute;
+            color: aliceblue;
+        }
+        .kids{
+            position: absolute;
+            top: 14%;
+            left: 7%;
+        }
+
+        .details{
+          width: 100%;
+            height: 50%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 351%;
+        }
+
+        .contact{
+          top: 10%;
+            left: 41%;
+            position: absolute;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(138, 44, 44);
+        }
+
+        .detail{
+          top: 35%;
+          left: 30%;
+          position: absolute;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: rgb(138, 44, 44);
+        }
+
+        .netflixindia{
+          top: 50%;
+          left: 46%;
+          position: absolute;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: rgb(138, 44, 44);
+        }
+
+
+        .dropbtn {
+      background-color: #09090985;
+      color: white;
+      padding: 6px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      
+      position: absolute;
+      left: 80%;
+      top:2.5%;
+    }
+
+    
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 82px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 10px 5px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+    @media screen and (max-width: 480px) {
+  /* Adjust the styles for smaller screens */
+  .content {
+    top: 5%;
+  }
+
+  .logo {
+    top: 5%;
+  }
+
+  .drop-down {
+    top: 5%;
+    left: 75%;
+  }
+
+  .write {
+    top: 20%;
+    left: 10%;
+    text-align: center;
+  }
+
+  .write h1 {
+    font-size: 24px;
+  }
+
+  .write p {
+    font-size: 16px;
+  }
+
+  .tv h1 {
+    top: 15%;
+    left: 5%;
+    font-size: 24px;
+  }
+
+  .tv p {
+    top: 30%;
+    left: 5%;
+    font-size: 16px;
+  }
+
+  .movie {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .video {
+    position: static;
+    width: 90%;
+    margin: auto;
+    left: 5;
+    transform: none;
+  }
+
+  .download h1 {
+    top: 15%;
+    left: 50%;
+    font-size: 24px;
+    transform: translateX(-50%);
+  }
+
+  .download p {
+    top: 40%;
+    left: 50%;
+    font-size: 16px;
+    transform: translateX(-50%);
+  }
+
+  .load {
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+  }
+
+  .downloading p1 {
+    top: 15%;
+    left: 25%;
+    font-size: 20px;
+  }
+
+  .downloading p {
+    top: 30%;
+    left: 25%;
+    font-size: 14px;
+  }
+
+  .roll {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+
+  .stream h1 {
+    top: 15%;
+    left: 5%;
+    font-size: 24px;
+  }
+
+  .stream p {
+    top: 30%;
+    left: 5%;
+    font-size: 16px;
+  }
+
+  .films {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+
+  .film {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+
+  .profile h1 {
+    top: 10%;
+    left: 50%;
+    font-size: 24px;
+    transform: translateX(-50%);
+  }
+
+  .profile p {
+    top: 35%;
+    left: 50%;
+    font-size: 16px;
+    transform: translateX(-50%);
+  }
+  .signin__button{
+    border-radius: 5px;
+    
+  }
+  .sign{
+            top: 3%;
+            left: 90%;
+            position: absolute;
+        }
+
+
+}
+
+ </style>
+    <body>
+        <div class="netflix">
+            <div style="width: 90%;height: 400px;position: relative;">
+                <img src="img\IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"  style="width: 112%; height: 187%; "/> 
+            </div>
+            <div class="content">
+                <div class="logo">
+                <img src="img\netflix-logo-0.png" style="width: 150px;">
+            </div>
+
+
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Language</button>
+                <div class="dropdown-content">
+                  <a href="index.html">English</a>
+                  <a href="netflix hindi.html">हिन्दी</a>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="dropdown" style="left: 90%;">
+                <button class="dropbtn">Sign in </button>
+                <div class="dropdown-content">
+                    <a href="sign.html">Sign up</a>
+                    <a href="">Login</a>
+                </div>
+              </div>
+
+
+              <div class="write">
+                <h1>
+                  Unlimited Movies ,TV<br />
+                  &nbsp&nbsp&nbsp&nbspShows and More.
+                </h1>
+                <p class="hero__subtitle">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWatch anywhere and cancel anytime.</p>
+                <p class="hero__description">
+                  Ready to watch? Enter your email to create or<br>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsprestart your membership .
+                  
+                </p>
+            </div>
+    </div>
+    
+    <div class="tv">
+        <div class="watch">
+            <h1>Enjoy on your TV.</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast,<br>
+                 Apple TV, Blu-ray players and more.</p>
+        </div>
+        
+        <div class="video" >
+            <video autoplay loop muted class="video">
+                <source src="video-tv-in-0819.m4v" >
+            </video>
+        </div>    
+        <div class="movie">
+            <img src="img\tv.png" style="width: 80%; height: 40%;">
+        </div>
+    </div>
+
+    <div class="download">
+        <div class="shows">
+            <h1>Download your shows to<br>
+                 watch offline.</h1>
+            <p>Save your favourites easily and always have<br>
+                 something to watch.</p>
+        </div>
+
+ 
+
+        <div class="loading">
+            <img src="img\mobile-0819.jpg" style="width: 75%; height: 80%;">
+        </div>
+
+        <div class="load" style="box-shadow: 0px 0px 10px 0px rgb(179, 179, 169) ;">
+            <div class="picture">
+                <img src="img\boxshot.png" width="50px">
+            </div>
+            <div class="downloading">
+                <p1>Stranger Things</p1>
+                <p>Downloading...</p>
+            </div>
+            <div class="roll">
+                <img src="img\download-icon.gif" style="width: 55%;">
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="stream">
+        <div class="device">
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on your <br>
+                 phone, tablet, laptop, and TV.</p>
+
+        </div>
+
+        <div class="film">
+            <video autoplay loop muted class="video">
+                <source src="video-devices-in.m4v" >
+            </video>
+        </div>
+        <div class="films">
+            <img src="img\device-pile-in.png" style="width: 90%; height: 40%;">
+        </div>
+    </div>
+
+    <div class="child">
+        <div class="profile">
+            <h1>Create profiles for <br>
+                 children.</h1>
+            <p>Send children on adventures with their favourite<br>
+                 characters in a space made just for them—free with<br>
+                 your membership.</p>
+        </div>
+
+        <div class="kids">
+            <img src="img\kids logo.png" style="width: 60%; height: 80%;">
+        </div>
+    </div>
+
+    <div class="details">
+        <div class="contact">
+            <h3>Questions? Call 000-800-919-1694</h3>
+        </div>
+        <div class="detail">
+            <a href="https://help.netflix.com/support/412">FAQ</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://help.netflix.com/">Help Center</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.netflix.com/youraccount">Account</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://help.netflix.com/contactus">Contact Us</a>
+        </div>
+        <div class="netflixindia">
+            <h2>Netflix Bharat</h2>
+        </div>
+    </div>
+
+    </body>
+</html>
